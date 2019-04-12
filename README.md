@@ -1,4 +1,4 @@
-# CoffeMug
+# CoffeeMug
 
 Someone at work posted this image: ![CoffeeMug](./CoffeeMug.jpg "CoffeeMug")
 

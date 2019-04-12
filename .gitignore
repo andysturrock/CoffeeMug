@@ -1,1 +1,3 @@
-CoffeeMug/
+.vs
+CoffeeMug/bin/**
+CoffeeMug/obj/**

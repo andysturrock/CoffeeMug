@@ -1,5 +1,10 @@
 .vs
 CoffeeMug/bin/**
 CoffeeMug/obj/**
+/packages/*
 C-sharp/bin/**
 C-sharp/obj/**
+F-sharp/CoffeeMugFsOo/bin/**
+F-sharp/CoffeeMugFsOo/obj/**
+
+

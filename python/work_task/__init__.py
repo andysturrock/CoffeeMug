@@ -1,9 +1,9 @@
-"""A representation of a pot, designed for brewing coffee."""
+"""A representation of a task to be worked on."""
 from random import randint
 
 
 class WorkTask(object):
-    """A representation of a pot, designed for brewing coffee."""
+    """A representation of a task to be worked on."""
 
     def __init__(self):
         self._completed = False

@@ -1,5 +1,5 @@
 """A representation of a coffee pot."""
-from python.container import LiquidContainer
+from container import LiquidContainer
 
 class CoffeePot(LiquidContainer):
     """A representation of a pot, designed for brewing coffee."""

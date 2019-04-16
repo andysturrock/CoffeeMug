@@ -4,8 +4,19 @@
 class LiquidContainer(object):
     """A representation of a container that contains liquid."""
 
-    def __init__(self):
+    def __init__(self, max_volume=100):
+        self._max_volume = max_volume
         self._volume = 0
+
+    @property
+    def max_volume(self):
+        """Returns container maximum volume in mls."""
+        return self._max_volume
+
+    @max_volume.setter
+    def max_volume(self, value):
+        """Sets container maximum volume in mls."""
+        self._max_volume = value
 
     @property
     def empty(self):
@@ -25,8 +36,9 @@ class LiquidContainer(object):
     @volume.setter
     def volume(self, value=100):
         if value < 0:
-            raise ValueError("A volume of less than 0% is not possible")
-        if value > 100:
-            value = 100
+            value = 0
+            raise ValueError("A volume of less than 0 is not possible")
+        if value > self._max_volume:
+            value = self._max_volume
             raise ValueError("Container has overflowed!")
         self._volume = value

@@ -31,7 +31,7 @@ class LiquidContainer(object):
     @property
     def full(self):
         """Returns container full status."""
-        return self._volume == 100
+        return self._volume == self.max_volume
 
     @volume.setter
     def volume(self, value=100):

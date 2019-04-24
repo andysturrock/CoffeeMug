@@ -1,4 +1,6 @@
-
+;
+; Coffee Mug Implementation
+;
 (defvar cup-size 10)
 (defvar sip-size 2)
 (defvar task-count 50)

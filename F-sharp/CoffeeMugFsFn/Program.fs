@@ -1,6 +1,6 @@
-﻿open Types
+﻿open System
+open Types
 open Functions
-open System
 
 [<EntryPoint>]
 let main argv = 
@@ -17,4 +17,5 @@ let main argv =
     workUntilDone ({EmptyCup = false }, { EmptyPot = false }, { Work = 10; Done = false })
     
     Console.ReadLine() |> ignore
+
     0 // return an integer exit code

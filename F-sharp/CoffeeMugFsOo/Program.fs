@@ -13,7 +13,7 @@ let main argv =
         if coffeeCup.Empty() then
             if coffeePot.Empty() then
                 coffeePot.Make()
-                coffeeCup.Refill()
+            coffeeCup.Refill()
     
     Console.ReadLine() |> ignore
     

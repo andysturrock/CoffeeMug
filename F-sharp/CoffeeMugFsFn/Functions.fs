@@ -4,48 +4,49 @@
     open System.Threading
     open Types
      
+    let print color message = 
+        Console.ForegroundColor <- color
+        printfn message 
+
+    let printInt color message number = 
+        Console.ForegroundColor <- color
+        printfn message number 
+
     let drink (cup, pot, task) =
-        Console.ForegroundColor <- ConsoleColor.Green
-        printfn "Drinking coffee..." 
+        print ConsoleColor.Green "Drinking coffee..." 
         Thread.Sleep 1000
-        printfn "Finished drinking coffee."  
-        { EmptyCup = true }, pot, task 
+        print ConsoleColor.Green "Finished drinking coffee."
+        let coffeeLeft = pot.CoffeeLevel - 1
+        { EmptyCup = true }, {CoffeeLevel = coffeeLeft}, task 
    
     let execute (cup, pot, task) =
-        Console.ForegroundColor <- ConsoleColor.Blue
-        printfn "Working..."
+        print ConsoleColor.Blue "Working..."
         Thread.Sleep 1000
         let random : Random = new Random()
         let workLeft = task.Work - random.Next (1, 5)
         match workLeft with
         | w when w > 0 -> 
-            printfn "Stopping work for now - %d bits of work left" w
-            if w < 5 then
-                cup, { EmptyPot = true }, { Work = w; Done = false }
-            else
-                cup, pot, { Work = w; Done = false }
+            printInt ConsoleColor.Blue "Stopping work for now - %d bits of work left" w
+            cup, pot, { Work = w; Done = false }
         | _ ->   
-            printfn "Task done! - 0 bits of work left"
-            Console.ForegroundColor <- ConsoleColor.Red
-            printfn "Thank you very much!" 
+            print ConsoleColor.Blue  "Task done! - 0 bits of work left"
+            print ConsoleColor.Red "Thank you very much!" 
             cup, pot, { Work = 0; Done = true}
 
     let make (cup, pot, task) =
-        if not task.Done && pot.EmptyPot then
-            Console.ForegroundColor <- ConsoleColor.Yellow
-            printfn "Making coffee..." 
+        if not task.Done && pot.CoffeeLevel = 0 then
+            print ConsoleColor.Yellow "Making coffee..." 
             Thread.Sleep 1000
-            printfn "CoffePot is now full" 
-            cup, { EmptyPot = false }, task
+            print ConsoleColor.Yellow "CoffePot is now full" 
+            cup, { CoffeeLevel = 2 }, task
         else
             cup, pot, task
                
     let refill (cup, pot, task) =
         if not task.Done && cup.EmptyCup then
-            Console.ForegroundColor <- ConsoleColor.DarkGray
-            printfn "Refilling coffee cup..." 
+            print ConsoleColor.DarkGray "Refilling coffee cup..." 
             Thread.Sleep 1000
-            printfn "Coffee cup is full." 
+            print ConsoleColor.DarkGray "Coffee cup is full." 
             { EmptyCup = false }, pot, task
         else
             cup, pot, task 

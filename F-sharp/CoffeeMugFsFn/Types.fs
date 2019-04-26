@@ -1,6 +1,6 @@
 ﻿module Types
 
     type Cup = { EmptyCup : bool }  
-    type Pot = { EmptyPot : bool }  
+    type Pot = { CoffeeLevel : int }  
     type Task = { Work : int; Done : bool }
 

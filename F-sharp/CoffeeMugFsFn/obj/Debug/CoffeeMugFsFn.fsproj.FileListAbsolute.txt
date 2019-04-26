@@ -2,8 +2,11 @@ C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\CoffeeMugFsFn.exe.config
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\CoffeeMugFsFn.XML
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\CoffeeMugFsFn.exe
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\CoffeeMugFsFn.pdb
-C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\FSharp.Core.dll
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\System.ValueTuple.dll
+C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.fsproj.CopyComplete
+C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.exe
+C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.pdb
+C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\FSharp.Core.dll
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\FSharp.Core.xml
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\System.ValueTuple.xml
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\cs\FSharp.Core.resources.dll
@@ -20,6 +23,3 @@ C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\ru\FSharp.Core.resources.dll
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\tr\FSharp.Core.resources.dll
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\zh-Hans\FSharp.Core.resources.dll
 C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\bin\Debug\zh-Hant\FSharp.Core.resources.dll
-C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.fsproj.CopyComplete
-C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.exe
-C:\github\CoffeeMug\F-sharp\CoffeeMugFsFn\obj\Debug\CoffeeMugFsFn.pdb

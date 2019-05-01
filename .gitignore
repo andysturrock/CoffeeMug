@@ -4,7 +4,9 @@ CoffeeMug/obj/**
 /packages/*
 C-sharp/bin/**
 C-sharp/obj/**
-F-sharp/CoffeeMugFsOo/bin/**
-F-sharp/CoffeeMugFsOo/obj/**
-
-
+F-sharp-Oo/bin/**
+F-sharp-Oo/obj/**
+F-sharp-Fn/bin/**
+F-sharp-Fn/obj/**
+T-SQL-MS/bin/**
+T-SQL-MS/obj/**

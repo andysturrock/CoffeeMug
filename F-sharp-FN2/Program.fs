@@ -1,10 +1,10 @@
 ﻿open System
 
 type Coffee     = HasCoffee | NoCoffee
-let isTrue ()   = Random().Next(0,2) = 0
+let ready ()    = Random().Next(0,2) = 1
 let refill      = HasCoffee
-let getCup      = if isTrue() then NoCoffee else HasCoffee
-let workDone () = isTrue()
+let getCup      = if ready() then HasCoffee else NoCoffee
+let workDone () = ready()
 let check cup   =  
     match cup with
      | HasCoffee -> HasCoffee 

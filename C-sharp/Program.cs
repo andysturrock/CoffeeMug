@@ -11,8 +11,10 @@ namespace CoffeeMug
     {
         static void Main(string[] args)
         {
-            var coffeeCup = new CoffeeCup();
+            
             var coffeePot = new CoffeePot();
+            var coffeeCup = new CoffeeCup(coffeePot);
+
             var workTask = new WorkTask();
             do
             {

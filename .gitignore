@@ -11,3 +11,4 @@ F-sharp-Fn/obj/**
 T-SQL-MS/bin/**
 T-SQL-MS/obj/**
 /F-sharp-FN2/obj
+*.swp
